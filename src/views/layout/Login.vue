@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+    <h2>优选后台管理</h2>
     <a-form-model
       class="login-form"
       ref="loginForm"
@@ -20,6 +21,12 @@
         <a-button style="margin-left: 10px" @click="resetForm('loginForm')">
           重置
         </a-button>
+      </a-form-model-item>
+      <a-form-model-item class="reg">
+         <span>
+            还没有账号？
+            <a href="https://mallapi.duyiedu.com/login/index.html#/register">注册</a>
+          </span>
       </a-form-model-item>
     </a-form-model>
   </div>
@@ -105,4 +112,11 @@ export default {
 
 <style scoped lang="less">
 @import url("~@/assets/css/login.less");
+
+.login{
+  h2{
+    text-align: center;
+    padding-top: 100px;
+  }
+}
 </style>
